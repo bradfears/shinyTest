@@ -1,0 +1,6 @@
+#!/bin/bash
+isExistApp = `pgrep shiny-server`
+if [[ -n  $isExistApp ]]; then
+    service shiny-server stop        
+fi
+
